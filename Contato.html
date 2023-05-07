@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contato</title>
-    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="Css/Estilo.css">
 </head>
+
 <body>
-<header>
-<h1>NOME DO MERCADO</h1>
-<img src="Imagens/logoA.png">
-<nav>
-    <a href="Index.html">Inicio</a>
-    <a href="Todos os produtos.html">Categorias</a>
-    <a href="Contato.html">Contato</a>
-</nav>
-</header>
 
-<main>
-    <h2>Alguma duvida?</h2>
-    <P>envie um email e entraremos em contato o mais rapido possivel</P>
-    <form method="get">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome" required><br>
+    <header>
+        <h1>NOME DO MERCADO</h1>
+        <img src="Imagens/logoA.png">
+    </header>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required><br>
+    <main>
+        <nav class="Menu">
+            <a href="Index.html">Inicio</a>
+            <ul class="Categorias">
+                <li> <a href="Todos os produtos.html">Todos os produtos</a></li>
+                <li><a href="Carnes/Frango.html">Carnes/Frango</a></li>
+                <li><a href="Margarinas.html">Margarinas</a></li>
+                <li><a href="Grãos.html">Grãos</a></li>
+                <li><a href="Temperos.html">Temperos</a></li>
+                <li><a href="Doces.html">Doces</a></li>
+                <li><a href="Bebidas.html">Bebidas</a></li>
+                <li><a href="Higiene e limpeza.html">Higiene e limpeza</a></li>
+                <li><a href="Verduras e Legumes.html">Verduras e Legumes</a></li>
+                <li><a href="Frutas.html">Frutas</a></li>
+                <li><a href=" Peixes e derivados.html"> Peixes e derivados</a></li>
+            </ul>
+            <a href="Contato.html">Contato</a>
+        </nav>
+        <section>
+            <article class="Contato">
+                <h2>Alguma duvida?</h2>
+                <P>envie um email e entraremos em contato o mais rapido possivel</P>
+                <form method="get">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required><br>
 
-        <label for="assunto">Assunto:</label>
-        <input type="text" name="assunto" id="assunto" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required><br>
 
-        <label for="msg">Mensagem:</label><br>
-        <textarea name="msg" id="msg" rows="5" cols="40" required></textarea><br>
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" name="assunto" id="assunto" required><br>
 
-        <button type="submit">Enviar</button>
-    </form>
-</main>
+                    <label for="msg">Mensagem:</label><br>
+                    <textarea name="msg" id="msg" rows="5" cols="40" required></textarea><br>
 
-<footer>
-<hr>
-<p>Nossas redes </p>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
 
-<p>nomes e rgms do grupo</p>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li>Nome: Lee Anthony Medrado - Rgm:33733783 </li>
-</ul>
-</footer>
+    <footer>
+        <p>Nossas redes </p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <p>nomes e rgms do grupo</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>Nome: Taís Pereira da Silva - RGM: 34143335</li>
+            <li>Nome: Lee Anthony Medrado - Rgm:33733783 </li>
+        </ul>
+    </footer>
 
 </body>
+
 </html>
