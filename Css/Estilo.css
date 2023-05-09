@@ -1,0 +1,153 @@
+/* Estilo para o menu */
+nav.Menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4169E1;
+  padding: 1rem;
+}
+
+nav.Menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+nav.Menu .Dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav.Menu .Dropdown .Submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+nav.Menu .Dropdown:hover .Submenu {
+  display: block;
+}
+
+nav.Menu .Dropdown .Submenu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav.Menu .Dropdown .Submenu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #4169E1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+footer hr {
+  width: 90%;
+  margin-top: 1rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+footer ul {
+  display: flex;
+}
+
+.sociais {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sociais li {
+  list-style: none;
+}
+
+.sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #4d4d4d;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s
+}
+
+.sociais a:hover {
+  transform: scale(1.2);
+}
+
+/* Definição das propriedades das imagens */
+img {
+  width: 250px;
+  height: 250px;
+}
+
+/* Definição das propriedades dos artigos */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Adição da barra horizontal entre as seções */
+section + section {
+  border-top: 1px solid #ccc;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Estilo para o título principal */
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* Estilo para os preços */
+.preço {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Estilo para os links */
+a {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+a:hover {
+  background-color: #0062cc;
+}
+
