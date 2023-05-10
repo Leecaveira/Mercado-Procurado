@@ -1,13 +1,19 @@
 /* Estilo para o menu */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 nav.Menu {
   display: flex;
   justify-content: space-between;
-  background-color: #4169E1;
+  background-color: #003e1f;
   padding: 1rem;
+
 }
 
 nav.Menu a {
-  color: white;
+  color: #ba2d0b;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -21,7 +27,7 @@ nav.Menu .Dropdown {
 nav.Menu .Dropdown .Submenu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #73ba9b2f;
   min-width: 160px;
   z-index: 1;
 }
@@ -31,31 +37,27 @@ nav.Menu .Dropdown:hover .Submenu {
 }
 
 nav.Menu .Dropdown .Submenu a {
-  color: black;
+  color: rgb(231, 231, 231);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 nav.Menu .Dropdown .Submenu a:hover {
-  background-color: #f1f1f1;
+  background-color: #1dc27a;
 }
 
 /* Estilo para o rodapé */
 footer {
-  background-color: #4169E1;
-  color: white;
+  background-color: #003e1f;
+  color: rgb(230, 253, 243);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-}
-
-footer hr {
-  width: 90%;
-  margin-top: 1rem;
-}
+  height: 100%;
+} 
 
 footer p {
   font-size: 1.2rem;
@@ -97,8 +99,8 @@ footer ul {
 
 /* Definição das propriedades das imagens */
 img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 300px;
 }
 
 /* Definição das propriedades dos artigos */
@@ -109,24 +111,23 @@ article {
   text-align: center;
 }
 
-/* Adição da barra horizontal entre as seções */
-section + section {
-  border-top: 1px solid #ccc;
-}
-
 /* Estilo para o cabeçalho */
 header {
-  display: flex;
+  text-align: center;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f2f2f2;
+  background-color: #ba2d0b;
+
+
 }
 
 /* Estilo para o título principal */
 h1 {
-  font-size: 28px;
+  font-size: 50px;
   margin: 0;
+  text-align: center;
+
 }
 
 /* Estilo para os preços */
@@ -139,15 +140,539 @@ h1 {
 /* Estilo para os links */
 a {
   text-decoration: none;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #032e08;
+  color: #e0ece1;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-top: 5px;
   font-size: 16px;
 }
 
 a:hover {
-  background-color: #0062cc;
+  background-color: #73ba9b;
 }
 
+.Novidades {
+  background-color: #016151;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Novidades h2 {
+  text-align: center;
+  color: #ba2d0b;
+}
+
+.Novidades article {
+  border-radius: 10px;
+  background: #12c296;
+  margin: 50px;
+  padding: 50px;
+  width: 250px;
+  box-shadow: 0 0 10px #000;
+}
+
+.Mais-Vendidos {
+  background-color: #016151;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mais-Vendidos h2 {
+  text-align: center;
+  color: #ba2d0b;
+}
+
+.Mais-Vendidos article {
+  border-radius: 10px;
+  background: #12c296;
+  margin: 50px;
+  padding: 50px;
+  width: 250px;
+  box-shadow: 0 0 10px #000;
+}
+
+#contato {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #2d04a0;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #0b8c70;
+  color: #d40f1f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+}
+
+body {
+  background-color: #d5f2e3;
+}
+
+.doces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.doces article {
+  background-color: #d5f2e3;
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+.doces figure {
+  margin: 0;
+  padding: 0;
+}
+
+.doces img {
+  display: block;
+  width: 100%;
+}
+
+.doces p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.doces .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bebidas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bebidas article {
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+
+}
+
+.bebidas img {
+  width: 100%;
+}
+
+.bebidas p {
+  margin: 5px 0;
+}
+
+.bebidas .preço {
+  font-weight: bold;
+  color: #ba2d0b;
+}
+
+.carnes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carnes article {
+  background-color: #d5f2e3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+
+.carnes figure {
+  margin: 0;
+  padding: 0;
+}
+
+.carnes img {
+  display: block;
+  width: 100%;
+}
+
+.carnes p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.carnes .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.frutas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.frutas article {
+  background-color: #d5f2e3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+.frutas figure {
+  margin: 0;
+  padding: 0;
+}
+
+.frutas img {
+  display: block;
+  width: 100%;
+}
+
+.frutas p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.frutas .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.graos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.graos article {
+  background-color: #d5f2e3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+.graos figure {
+  margin: 0;
+  padding: 0;
+}
+
+.graos img {
+  display: block;
+  width: 100%;
+}
+
+.graos p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.graos .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.higienie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.higienie article {
+  background-color: #d5f2e3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+.higienie figure {
+  margin: 0;
+  padding: 0;
+}
+
+.higienie img {
+  display: block;
+  width: 100%;
+}
+
+.higienie p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.higienie .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.margarinas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.margarinas article {
+  background-color: #d5f2e3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+.margarinas figure {
+  margin: 0;
+  padding: 0;
+}
+
+.margarinas img {
+  display: block;
+  width: 100%;
+}
+
+.margarinas p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.margarinas .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.peixes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.peixes article {
+  background-color: #d5f2e3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+.peixes figure {
+  margin: 0;
+  padding: 0;
+}
+
+.peixes img {
+  display: block;
+  width: 100%;
+}
+
+.peixes p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.peixes .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.vegetais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.vegetais article {
+  background-color: #d5f2e3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+.vegetais figure {
+  margin: 0;
+  padding: 0;
+}
+
+.vegetais img {
+  display: block;
+  width: 100%;
+}
+
+.vegetais p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.vegetais .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.temperos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.temperos article {
+  background-color: #d5f2e3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 35px;
+  margin: 10px;
+
+}
+
+.temperos figure {
+  margin: 0;
+  padding: 0;
+}
+
+.temperos img {
+  display: block;
+  width: 100%;
+}
+
+.temperos p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.temperos .preço {
+  color: #ba2d0b;
+  font-size: 20px;
+  font-weight: bold;
+}
