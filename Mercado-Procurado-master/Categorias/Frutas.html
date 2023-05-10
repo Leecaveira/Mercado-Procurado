@@ -1,40 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<!DOCTYPE html>	
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index do projeto</title>
-    <link rel="stylesheet" href="Css/Estilo.css">
+    <title>Mercado Procurado</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/logoA.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body>
-
     <header>
-        <h1>Mercado Procurado</h1>
-        <img src="Imagens/logoA.png">
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="itens">
+                <ul>
+                    <li><a href="Todos os produtos.html">Todos os produtos</a></li>
+                    <li><a href="Categorias/Bebidas.html">Bebidas</a></li>
+                    <li><a href="Categorias/Carnes e Frango.html">Carnes/Frango</a></li>
+                    <li><a href="Categorias/Doces.html">Doces</a></li>
+                    <li><a href="Categorias/Frutas.html">Frutas</a></li>
+                    <li><a href="Categorias/Grãos.html">Grãos</a></li>
+                    <li><a href="Categorias/Higiene e limpeza.html">Higiene e limpeza</a></li>
+                    <li><a href="Categorias/Margarinas.html">Margarinas</a></li>
+                    <li><a href="Categorias/Peixes e derivados.html"> Peixes e derivados</a></li>
+                    <li><a href="Categorias/Temperos.html">Temperos</a></li>
+                    <li><a href="Categorias/Verduras e Legumes.html">Verduras e Legumes</a></li>
+                </ul>
+            </menu>
+            <div class="container">
+            <div id="logo">
+                <img src="imagens/logoA.png">     
+            </div>
+            <div id="esquerda">
+                <section>
+                    <h1>MERCADO PROCURADO</h1>
+                </section>
+                <nav>
+                    <a href="Index.html">Inicio</a>
+                    <a href="Todos os produtos.html">Categorias</a>
+                <a href="Contato.html">Contato</a>
+                </nav>
+            </div>
+        </div>
     </header>
-
-    <main>
-        <nav class="Menu">
-            <a href="Index.html">Inicio</a>
-            <ul class="Categorias">
-                <li> <a href="Todos os produtos.html">Todos os produtos</a></li>
-                <li><a href="Categorias/Bebidas.html">Bebidas</a></li>
-                <li><a href="Categorias/Carnes e Frango.html">Carnes/Frango</a></li>
-                <li><a href="Categorias/Doces.html">Doces</a></li>
-                <li><a href="Categorias/Frutas.html">Frutas</a></li>
-                <li><a href="Categorias/Grãos.html">Grãos</a></li>
-                <li><a href="Categorias/Higiene e limpeza.html">Higiene e limpeza</a></li>
-                <li><a href="Categorias/Margarinas.html">Margarinas</a></li>
-                <li><a href="Categorias/Peixes e derivados.html"> Peixes e derivados</a></li>
-                <li><a href="Categorias/Temperos.html">Temperos</a></li>
-                <li><a href="Categorias/Verduras e Legumes.html">Verduras e Legumes</a></li>
-            </ul>
-            <a href="Contato.html">Contato</a>
-        </nav>
-
+    
         <section class="Frutas">
             <article>
                 <figure><img src="imagens/img46.png" alt="Tomate carmem kg"></figure>
@@ -149,28 +159,20 @@
         
     </main>
 
-    <footer>
-        <hr>
-        <p>Nossas redes </p>
-            <ul class="redes sociais">
-            <li><a href="#"><i class="fab fa-facebook"> Facebook </i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"> Twitter </i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"> Instagram </i></a></li>
-            </ul>
-
-        <p>nomes e rgms do grupo</p>
-
-        <ul class="Nomes">
-            <li>Nome: Amanda Gonçalves Balbino Silva RGM:33004099</li>
-            <li>Nome: Julio Cesar Ribeiro Duarte RGM: 33892920</li>
-            <li>Nome: Lee Anthony Medrado - RGM: 33733783</li>
-            <li>Nome: Pedro Augusto Marques Ferreira RGM: 133293643</li>
-            <li>Nome: Pedro Henrique Da Silva Santos RGM: 34027947</li>
-            <li>Nome: Taís Pereira da Silva - RGM: 34143335</li>
-        </ul>
+    <div id="footer_copyright">
+        &#169
+        2023 all rights reserved
+    </div>
 
     </footer>
-
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
-
 </html>
