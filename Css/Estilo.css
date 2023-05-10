@@ -9,7 +9,6 @@ nav.Menu {
   justify-content: space-between;
   background-color: #003e1f;
   padding: 1rem;
-
 }
 
 nav.Menu a {
@@ -64,11 +63,11 @@ footer p {
   margin: 1rem 0;
 }
 
-footer ul {
+footer ul .nomes{
   display: flex;
 }
 
-.sociais {
+ .sociais {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -86,7 +85,6 @@ footer ul {
   color: white;
   background-color: #4d4d4d;
   padding: 10px;
-  border-radius: 50%;
   text-decoration: none;
   width: 50px;
   height: 50px;
@@ -118,8 +116,6 @@ header {
   align-items: center;
   padding: 10px;
   background-color: #ba2d0b;
-
-
 }
 
 /* Estilo para o título principal */
@@ -127,7 +123,6 @@ h1 {
   font-size: 50px;
   margin: 0;
   text-align: center;
-
 }
 
 /* Estilo para os preços */
@@ -676,3 +671,9 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
+@media screen and (min-width:800px) {
+  .container{
+    margin: 1em 2em;
+  }
+}
+  
